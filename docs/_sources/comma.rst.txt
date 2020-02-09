@@ -1,0 +1,7 @@
+comma module
+============
+
+.. automodule:: comma
+   :members:
+   :undoc-members:
+   :show-inheritance:

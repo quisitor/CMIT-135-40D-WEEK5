@@ -1,0 +1,7 @@
+backpack module
+===============
+
+.. automodule:: backpack
+   :members:
+   :undoc-members:
+   :show-inheritance:

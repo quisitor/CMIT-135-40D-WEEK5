@@ -1,0 +1,7 @@
+PictureGrid module
+==================
+
+.. automodule:: PictureGrid
+   :members:
+   :undoc-members:
+   :show-inheritance:

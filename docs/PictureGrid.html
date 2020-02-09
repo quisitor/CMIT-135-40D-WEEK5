@@ -1,0 +1,210 @@
+
+<!DOCTYPE html>
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+  <head>
+    <meta charset="utf-8" />
+    <title>PictureGrid module &#8212; Programming with Lists 1.0 documentation</title>
+    <link rel="stylesheet" href="_static/classic.css" type="text/css" />
+    <link rel="stylesheet" href="_static/pygments.css" type="text/css" />
+    
+    <script type="text/javascript" id="documentation_options" data-url_root="./" src="_static/documentation_options.js"></script>
+    <script type="text/javascript" src="_static/jquery.js"></script>
+    <script type="text/javascript" src="_static/underscore.js"></script>
+    <script type="text/javascript" src="_static/doctools.js"></script>
+    <script type="text/javascript" src="_static/language_data.js"></script>
+    
+    <link rel="index" title="Index" href="genindex.html" />
+    <link rel="search" title="Search" href="search.html" />
+    <link rel="next" title="backpack module" href="backpack.html" />
+    <link rel="prev" title="CMIT-135-40D-WEEK5" href="modules.html" />
+    <style type="text/css">
+        .s0 { color: #55ffff; font-weight: bold;}
+        .s1 { color: #bbbbbb;}
+        .s2 { color: #55ffff;}
+        .s3 { color: #55ff55; font-weight: bold;}
+        .s4 { color: #ffff55; font-weight: bold;}
+        .s5 { color: #008080; font-weight: bold;}
+        .s6 { color: #ff5555; font-weight: bold;}
+        .s7 { color: #ff55ff;}
+        .ln { color: #bbbbbb; font-weight: normal; font-style: normal; }
+    </style>
+  </head><body>
+    <div class="related" role="navigation" aria-label="related navigation">
+      <h3>Navigation</h3>
+      <ul>
+        <li class="right" style="margin-right: 10px">
+          <a href="genindex.html" title="General Index"
+             accesskey="I">index</a></li>
+        <li class="right" >
+          <a href="py-modindex.html" title="Python Module Index"
+             >modules</a> |</li>
+        <li class="right" >
+          <a href="backpack.html" title="backpack module"
+             accesskey="N">next</a> |</li>
+        <li class="right" >
+          <a href="modules.html" title="CMIT-135-40D-WEEK5"
+             accesskey="P">previous</a> |</li>
+        <li class="nav-item nav-item-0"><a href="index.html">Programming with Lists 1.0 documentation</a> &#187;</li>
+          <li class="nav-item nav-item-1"><a href="modules.html" accesskey="U">CMIT-135-40D-WEEK5</a> &#187;</li> 
+      </ul>
+    </div>  
+
+    <div class="document">
+      <div class="documentwrapper">
+        <div class="bodywrapper">
+          <div class="body" role="main">
+            
+  <div class="section" id="module-PictureGrid">
+<span id="picturegrid-module"></span><h1>PictureGrid module<a class="headerlink" href="#module-PictureGrid" title="Permalink to this headline">¶</a></h1>
+<dl class="field-list simple">
+<dt class="field-odd">Student</dt>
+<dd class="field-odd"><p>Craig Smith</p>
+</dd>
+<dt class="field-even">Week-5</dt>
+<dd class="field-even"><p>Programming with Lists</p>
+</dd>
+<dt class="field-odd">Module</dt>
+<dd class="field-odd"><p>Character Picture Grid (Extra Credit)</p>
+</dd>
+<dt class="field-even">Course</dt>
+<dd class="field-even"><p>CMIT-135-40D (Champlain College)</p>
+</dd>
+<dt class="field-odd">Professor</dt>
+<dd class="field-odd"><p>Steve Giles</p>
+</dd>
+<dt class="field-even">Author</dt>
+<dd class="field-even"><p>Craig Smith</p>
+</dd>
+</dl>
+<div class="section" id="purpose">
+<h2>Purpose<a class="headerlink" href="#purpose" title="Permalink to this headline">¶</a></h2>
+<p>The purpose of the program is to print a transposition of the image contained in the two-dimensional list.</p>
+</div>
+<div class="section" id="constraints">
+<h2>Constraints<a class="headerlink" href="#constraints" title="Permalink to this headline">¶</a></h2>
+<ol class="arabic simple">
+<li><p>Utilize a nested for-loop</p></li>
+</ol>
+</div>
+<div class="section" id="'code">
+    <h2>Code<a class="headerlink" href="#Code" title="'Permalink to this headline">¶</a></h2>
+
+    <table CELLSPACING=0 CELLPADDING=5 WIDTH="100%" BGCOLOR="#606060" >
+    <tr><td><center>
+    <font face="Arial, Helvetica" color="#000000">
+    PictureGrid.py</font>
+    </center></td></tr></table>
+<pre><a name="l1"><span class="ln">1    </span></a><span class="s0">&quot;&quot;&quot;
+<a name="l2"><span class="ln">2    </span></a>
+<a name="l3"><span class="ln">3    </span></a>:Student: Craig Smith
+<a name="l4"><span class="ln">4    </span></a>:Week-5: Programming with Lists
+<a name="l5"><span class="ln">5    </span></a>:Module: Character Picture Grid (Extra Credit)
+<a name="l6"><span class="ln">6    </span></a>:Course: CMIT-135-40D (Champlain College)
+<a name="l7"><span class="ln">7    </span></a>:Professor: Steve Giles
+<a name="l8"><span class="ln">8    </span></a>:Author: Craig Smith
+<a name="l9"><span class="ln">9    </span></a>
+<a name="l10"><span class="ln">10   </span></a>Purpose
+<a name="l11"><span class="ln">11   </span></a>-------
+<a name="l12"><span class="ln">12   </span></a>The purpose of the program is to print a transposition of the image
+<a name="l13"><span class="ln">13   </span></a>contained in the two-dimensional list.
+<a name="l14"><span class="ln">14   </span></a>
+<a name="l15"><span class="ln">15   </span></a>Constraints
+<a name="l16"><span class="ln">16   </span></a>-----------
+<a name="l17"><span class="ln">17   </span></a>1. Utilize a nested for-loop
+<a name="l18"><span class="ln">18   </span></a>
+<a name="l19"><span class="ln">19   </span></a>&quot;&quot;&quot;</span>
+<a name="l20"><span class="ln">20   </span></a>
+<a name="l21"><span class="ln">21   </span></a><span class="s2"># Main</span>
+<a name="l22"><span class="ln">22   </span></a>
+<a name="l23"><span class="ln">23   </span></a><span class="s3">if </span><span class="s1">__name__ </span><span class="s4">== </span><span class="s5">'__main__'</span><span class="s4">:</span>
+<a name="l24"><span class="ln">24   </span></a>
+<a name="l25"><span class="ln">25   </span></a>    <span class="s1">grid </span><span class="s4">= </span><span class="s6">[[</span><span class="s5">'.'</span><span class="s4">, </span><span class="s5">'.'</span><span class="s4">, </span><span class="s5">'.'</span><span class="s4">, </span><span class="s5">'.'</span><span class="s4">, </span><span class="s5">'.'</span><span class="s4">, </span><span class="s5">'.'</span><span class="s6">]</span><span class="s4">,</span>
+<a name="l26"><span class="ln">26   </span></a>            <span class="s6">[</span><span class="s5">'.'</span><span class="s4">, </span><span class="s5">'O'</span><span class="s4">, </span><span class="s5">'O'</span><span class="s4">, </span><span class="s5">'.'</span><span class="s4">, </span><span class="s5">'.'</span><span class="s4">, </span><span class="s5">'.'</span><span class="s6">]</span><span class="s4">,</span>
+<a name="l27"><span class="ln">27   </span></a>            <span class="s6">[</span><span class="s5">'O'</span><span class="s4">, </span><span class="s5">'O'</span><span class="s4">, </span><span class="s5">'O'</span><span class="s4">, </span><span class="s5">'O'</span><span class="s4">, </span><span class="s5">'.'</span><span class="s4">, </span><span class="s5">'.'</span><span class="s6">]</span><span class="s4">,</span>
+<a name="l28"><span class="ln">28   </span></a>            <span class="s6">[</span><span class="s5">'O'</span><span class="s4">, </span><span class="s5">'O'</span><span class="s4">, </span><span class="s5">'O'</span><span class="s4">, </span><span class="s5">'O'</span><span class="s4">, </span><span class="s5">'O'</span><span class="s4">, </span><span class="s5">'.'</span><span class="s6">]</span><span class="s4">,</span>
+<a name="l29"><span class="ln">29   </span></a>            <span class="s6">[</span><span class="s5">'.'</span><span class="s4">, </span><span class="s5">'O'</span><span class="s4">, </span><span class="s5">'O'</span><span class="s4">, </span><span class="s5">'O'</span><span class="s4">, </span><span class="s5">'O'</span><span class="s4">, </span><span class="s5">'O'</span><span class="s6">]</span><span class="s4">,</span>
+<a name="l30"><span class="ln">30   </span></a>            <span class="s6">[</span><span class="s5">'O'</span><span class="s4">, </span><span class="s5">'O'</span><span class="s4">, </span><span class="s5">'O'</span><span class="s4">, </span><span class="s5">'O'</span><span class="s4">, </span><span class="s5">'O'</span><span class="s4">, </span><span class="s5">'.'</span><span class="s6">]</span><span class="s4">,</span>
+<a name="l31"><span class="ln">31   </span></a>            <span class="s6">[</span><span class="s5">'O'</span><span class="s4">, </span><span class="s5">'O'</span><span class="s4">, </span><span class="s5">'O'</span><span class="s4">, </span><span class="s5">'O'</span><span class="s4">, </span><span class="s5">'.'</span><span class="s4">, </span><span class="s5">'.'</span><span class="s6">]</span><span class="s4">,</span>
+<a name="l32"><span class="ln">32   </span></a>            <span class="s6">[</span><span class="s5">'.'</span><span class="s4">, </span><span class="s5">'O'</span><span class="s4">, </span><span class="s5">'O'</span><span class="s4">, </span><span class="s5">'.'</span><span class="s4">, </span><span class="s5">'.'</span><span class="s4">, </span><span class="s5">'.'</span><span class="s6">]</span><span class="s4">,</span>
+<a name="l33"><span class="ln">33   </span></a>            <span class="s6">[</span><span class="s5">'.'</span><span class="s4">, </span><span class="s5">'.'</span><span class="s4">, </span><span class="s5">'.'</span><span class="s4">, </span><span class="s5">'.'</span><span class="s4">, </span><span class="s5">'.'</span><span class="s4">, </span><span class="s5">'.'</span><span class="s6">]]</span>
+<a name="l34"><span class="ln">34   </span></a>
+<a name="l35"><span class="ln">35   </span></a>    <span class="s3">for </span><span class="s1">col </span><span class="s3">in </span><span class="s1">range</span><span class="s6">(</span><span class="s7">6</span><span class="s6">)</span><span class="s4">:</span>
+<a name="l36"><span class="ln">36   </span></a>        <span class="s3">for </span><span class="s1">row </span><span class="s3">in </span><span class="s1">range</span><span class="s6">(</span><span class="s7">9</span><span class="s6">)</span><span class="s4">:</span>
+<a name="l37"><span class="ln">37   </span></a>            <span class="s1">print</span><span class="s6">(</span><span class="s1">grid</span><span class="s6">[</span><span class="s1">row</span><span class="s6">][</span><span class="s1">col</span><span class="s6">]</span><span class="s4">, </span><span class="s1">end</span><span class="s4">=</span><span class="s5">' '</span><span class="s6">)</span>
+<a name="l38"><span class="ln">38   </span></a>        <span class="s1">print</span><span class="s6">()</span>
+<a name="l39"><span class="ln">39   </span></a></pre>
+</div>
+<div class="section" id="'sample_code_output">
+    <h2>Code Output Example<a class="headerlink" href="#sample_code_output" title="'Permalink to this headline">¶</a></h2>
+    <pre>
+        <img src="picturegrid.png" alt="character grid image">
+    </pre>
+</div>
+</div>
+          </div>
+        </div>
+      </div>
+      <div class="sphinxsidebar" role="navigation" aria-label="main navigation">
+        <div class="sphinxsidebarwrapper">
+  <h3><a href="index.html">Table of Contents</a></h3>
+  <ul>
+<li><a class="reference internal" href="#">PictureGrid module</a><ul>
+<li><a class="reference internal" href="#purpose">Purpose</a></li>
+<li><a class="reference internal" href="#constraints">Constraints</a></li>
+</ul>
+</li>
+</ul>
+
+  <h4>Previous topic</h4>
+  <p class="topless"><a href="modules.html"
+                        title="previous chapter">CMIT-135-40D-WEEK5</a></p>
+  <h4>Next topic</h4>
+  <p class="topless"><a href="backpack.html"
+                        title="next chapter">backpack module</a></p>
+  <div role="note" aria-label="source link">
+    <h3>This Page</h3>
+    <ul class="this-page-menu">
+      <li><a href="_sources/PictureGrid.rst.txt"
+            rel="nofollow">Show Source</a></li>
+    </ul>
+   </div>
+<div id="searchbox" style="display: none" role="search">
+  <h3 id="searchlabel">Quick search</h3>
+    <div class="searchformwrapper">
+    <form class="search" action="search.html" method="get">
+      <input type="text" name="q" aria-labelledby="searchlabel" />
+      <input type="submit" value="Go" />
+    </form>
+    </div>
+</div>
+<script type="text/javascript">$('#searchbox').show(0);</script>
+        </div>
+      </div>
+      <div class="clearer"></div>
+    </div>
+    <div class="related" role="navigation" aria-label="related navigation">
+      <h3>Navigation</h3>
+      <ul>
+        <li class="right" style="margin-right: 10px">
+          <a href="genindex.html" title="General Index"
+             >index</a></li>
+        <li class="right" >
+          <a href="py-modindex.html" title="Python Module Index"
+             >modules</a> |</li>
+        <li class="right" >
+          <a href="backpack.html" title="backpack module"
+             >next</a> |</li>
+        <li class="right" >
+          <a href="modules.html" title="CMIT-135-40D-WEEK5"
+             >previous</a> |</li>
+        <li class="nav-item nav-item-0"><a href="index.html">Programming with Lists 1.0 documentation</a> &#187;</li>
+          <li class="nav-item nav-item-1"><a href="modules.html" >CMIT-135-40D-WEEK5</a> &#187;</li> 
+      </ul>
+    </div>
+    <div class="footer" role="contentinfo">
+        &#169; Copyright 2020, Craig Smith.
+      Created using <a href="http://sphinx-doc.org/">Sphinx</a> 2.3.1.
+    </div>
+  </body>
+</html>

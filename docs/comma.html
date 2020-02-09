@@ -1,0 +1,276 @@
+
+<!DOCTYPE html>
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+  <head>
+    <meta charset="utf-8" />
+    <title>comma module &#8212; Programming with Lists 1.0 documentation</title>
+    <link rel="stylesheet" href="_static/classic.css" type="text/css" />
+    <link rel="stylesheet" href="_static/pygments.css" type="text/css" />
+    
+    <script type="text/javascript" id="documentation_options" data-url_root="./" src="_static/documentation_options.js"></script>
+    <script type="text/javascript" src="_static/jquery.js"></script>
+    <script type="text/javascript" src="_static/underscore.js"></script>
+    <script type="text/javascript" src="_static/doctools.js"></script>
+    <script type="text/javascript" src="_static/language_data.js"></script>
+    
+    <link rel="index" title="Index" href="genindex.html" />
+    <link rel="search" title="Search" href="search.html" />
+    <link rel="prev" title="backpack module" href="backpack.html" />
+    <style type="text/css">
+        .s0 { color: #55ffff; font-weight: bold;}
+        .s1 { color: #bbbbbb;}
+        .s2 { color: #55ff55; font-weight: bold;}
+        .s3 { color: #ff5555; font-weight: bold;}
+        .s4 { color: #ffff55; font-weight: bold;}
+        .s5 { color: #008080; font-weight: bold;}
+        .s6 { color: #ff55ff;}
+        .s7 { color: #55ffff;}
+        .ln { color: #bbbbbb; font-weight: normal; font-style: normal; }
+    </style>
+  </head><body>
+    <div class="related" role="navigation" aria-label="related navigation">
+      <h3>Navigation</h3>
+      <ul>
+        <li class="right" style="margin-right: 10px">
+          <a href="genindex.html" title="General Index"
+             accesskey="I">index</a></li>
+        <li class="right" >
+          <a href="py-modindex.html" title="Python Module Index"
+             >modules</a> |</li>
+        <li class="right" >
+          <a href="backpack.html" title="backpack module"
+             accesskey="P">previous</a> |</li>
+        <li class="nav-item nav-item-0"><a href="index.html">Programming with Lists 1.0 documentation</a> &#187;</li>
+          <li class="nav-item nav-item-1"><a href="modules.html" accesskey="U">CMIT-135-40D-WEEK5</a> &#187;</li> 
+      </ul>
+    </div>  
+
+    <div class="document">
+      <div class="documentwrapper">
+        <div class="bodywrapper">
+          <div class="body" role="main">
+            
+  <div class="section" id="module-comma">
+<span id="comma-module"></span><h1>comma module<a class="headerlink" href="#module-comma" title="Permalink to this headline">¶</a></h1>
+<dl class="field-list simple">
+<dt class="field-odd">Student</dt>
+<dd class="field-odd"><p>Craig Smith</p>
+</dd>
+<dt class="field-even">Week-5</dt>
+<dd class="field-even"><p>Programming with Lists</p>
+</dd>
+<dt class="field-odd">Module</dt>
+<dd class="field-odd"><p>Comma Code</p>
+</dd>
+<dt class="field-even">Course</dt>
+<dd class="field-even"><p>CMIT-135-40D (Champlain College)</p>
+</dd>
+<dt class="field-odd">Professor</dt>
+<dd class="field-odd"><p>Steve Giles</p>
+</dd>
+<dt class="field-even">Author</dt>
+<dd class="field-even"><p>Craig Smith</p>
+</dd>
+</dl>
+<div class="section" id="purpose">
+<h2>Purpose<a class="headerlink" href="#purpose" title="Permalink to this headline">¶</a></h2>
+<p>The program takes a user entered list from the terminal and prints the list
+as a comma-delimited listing with proper spacing.
+The code includes two versions of the solution.
+A function call based concatenation version and a one-time print function version in main.
+Each version demonstrates different aspects of this weeks lessons.</p>
+</div>
+<div class="section" id="constraints">
+<h2>Constraints<a class="headerlink" href="#constraints" title="Permalink to this headline">¶</a></h2>
+<ol class="arabic simple">
+<li><p>Include commas and spaces inbetween listed items</p></li>
+<li><p>Last item must be displayed with the word “and” in front of it. (and last_item)</p></li>
+<li><p>Course provided code utilized in the list_generator function</p></li>
+</ol>
+</div>
+<div class="section" id="parameters">
+<h2>Parameters<a class="headerlink" href="#parameters" title="Permalink to this headline">¶</a></h2>
+<dl class="field-list simple">
+<dt class="field-odd">param some_list</dt>
+<dd class="field-odd"><p>Input list generated from user terminal input</p>
+</dd>
+<dt class="field-even">output</dt>
+<dd class="field-even"><p>Printed list formatted as follows: item1, item2, item3, and last_item</p>
+</dd>
+</dl>
+<dl class="function">
+<dt id="comma.comma_code">
+<code class="sig-prename descclassname">comma.</code><code class="sig-name descname">comma_code</code><span class="sig-paren">(</span><em class="sig-param">some_list</em><span class="sig-paren">)</span><a class="headerlink" href="#comma.comma_code" title="Permalink to this definition">¶</a></dt>
+<dd><p>This function creates a comma-delimited string from an input list
+:param some_list: Input list generated from user terminal input
+:return: string formatted as follows: item1, item2, item3, and last_item</p>
+</dd></dl>
+
+<dl class="function">
+<dt id="comma.list_generator">
+<code class="sig-prename descclassname">comma.</code><code class="sig-name descname">list_generator</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#comma.list_generator" title="Permalink to this definition">¶</a></dt>
+<dd><p>This function creates a list from a user input list of values
+:return: List of user input string values</p>
+</dd></dl>
+
+</div>
+<div class="section" id="'code">
+    <h2>Code<a class="headerlink" href="#Code" title="'Permalink to this headline">¶</a></h2>
+    <table CELLSPACING=0 CELLPADDING=5 WIDTH="100%" BGCOLOR="#606060" >
+    <tr><td><center>
+    <font face="Arial, Helvetica" color="#000000">
+    comma.py</font>
+    </center></td></tr></table>
+    <pre><a name="l1"><span class="ln">    1    </span></a><span class="s0">&quot;&quot;&quot;
+    <a name="l2"><span class="ln">2    </span></a>
+    <a name="l3"><span class="ln">3    </span></a>:Student: Craig Smith
+    <a name="l4"><span class="ln">4    </span></a>:Week-5: Programming with Lists
+    <a name="l5"><span class="ln">5    </span></a>:Module: Comma Code
+    <a name="l6"><span class="ln">6    </span></a>:Course: CMIT-135-40D (Champlain College)
+    <a name="l7"><span class="ln">7    </span></a>:Professor: Steve Giles
+    <a name="l8"><span class="ln">8    </span></a>:Author: Craig Smith
+    <a name="l9"><span class="ln">9    </span></a>
+    <a name="l10"><span class="ln">10   </span></a>Purpose
+    <a name="l11"><span class="ln">11   </span></a>-------
+    <a name="l12"><span class="ln">12   </span></a>The program takes a user entered list from the terminal and prints the list
+    <a name="l13"><span class="ln">13   </span></a>as a comma-delimited listing with proper spacing.
+    <a name="l14"><span class="ln">14   </span></a>The code includes two versions of the solution.
+    <a name="l15"><span class="ln">15   </span></a>A function call based concatenation version and a one-time print function version in main.
+    <a name="l16"><span class="ln">16   </span></a>Each version demonstrates different aspects of this weeks lessons.
+    <a name="l17"><span class="ln">17   </span></a>
+    <a name="l18"><span class="ln">18   </span></a>Constraints
+    <a name="l19"><span class="ln">19   </span></a>-----------
+    <a name="l20"><span class="ln">20   </span></a>1. Include commas and spaces inbetween listed items
+    <a name="l21"><span class="ln">21   </span></a>2. Last item must be displayed with the word &quot;and&quot; in front of it. (and last_item)
+    <a name="l22"><span class="ln">22   </span></a>3. Course provided code utilized in the list_generator function
+    <a name="l23"><span class="ln">23   </span></a>
+    <a name="l24"><span class="ln">24   </span></a>Parameters
+    <a name="l25"><span class="ln">25   </span></a>----------
+    <a name="l26"><span class="ln">26   </span></a>:param some_list: Input list generated from user terminal input
+    <a name="l27"><span class="ln">27   </span></a>:output: Printed list formatted as follows: item1, item2, item3, and last_item
+    <a name="l28"><span class="ln">28   </span></a>
+    <a name="l29"><span class="ln">29   </span></a>&quot;&quot;&quot;</span>
+    <a name="l30"><span class="ln">30   </span></a>
+    <a name="l31"><span class="ln">31   </span></a>
+    <a name="l32"><span class="ln">32   </span></a><span class="s2">def </span><span class="s1">comma_code</span><span class="s3">(</span><span class="s1">some_list</span><span class="s3">)</span><span class="s4">:</span>
+    <a name="l33"><span class="ln">33   </span></a>    <span class="s0">&quot;&quot;&quot;
+    <a name="l34"><span class="ln">34   </span></a>    This function creates a comma-delimited string from an input list
+    <a name="l35"><span class="ln">35   </span></a>    :param some_list: Input list generated from user terminal input
+    <a name="l36"><span class="ln">36   </span></a>    :return: string formatted as follows: item1, item2, item3, and last_item
+    <a name="l37"><span class="ln">37   </span></a>    &quot;&quot;&quot;</span>
+    <a name="l38"><span class="ln">38   </span></a>    <span class="s1">new_string </span><span class="s4">= </span><span class="s5">''</span>
+    <a name="l39"><span class="ln">39   </span></a>    <span class="s2">if not </span><span class="s1">some_list</span><span class="s4">:</span>
+    <a name="l40"><span class="ln">40   </span></a>        <span class="s2">return </span><span class="s5">&quot;Nothing to Print&quot;</span>
+    <a name="l41"><span class="ln">41   </span></a>    <span class="s2">elif </span><span class="s1">len</span><span class="s3">(</span><span class="s1">some_list</span><span class="s3">) </span><span class="s4">== </span><span class="s6">1</span><span class="s4">:</span>
+    <a name="l42"><span class="ln">42   </span></a>        <span class="s2">return </span><span class="s1">some_list</span><span class="s3">[</span><span class="s6">0</span><span class="s3">]</span>
+    <a name="l43"><span class="ln">43   </span></a>    <span class="s2">else</span><span class="s4">:</span>
+    <a name="l44"><span class="ln">44   </span></a>        <span class="s2">for </span><span class="s1">dummy_val </span><span class="s2">in </span><span class="s1">some_list</span><span class="s3">[</span><span class="s4">:-</span><span class="s6">1</span><span class="s3">]</span><span class="s4">:</span>
+    <a name="l45"><span class="ln">45   </span></a>            <span class="s1">new_string </span><span class="s4">+= </span><span class="s3">(</span><span class="s1">dummy_val </span><span class="s4">+ </span><span class="s5">', '</span><span class="s3">)</span>
+    <a name="l46"><span class="ln">46   </span></a>        <span class="s1">new_string </span><span class="s4">+= </span><span class="s3">(</span><span class="s5">'and ' </span><span class="s4">+ </span><span class="s1">some_list</span><span class="s3">[</span><span class="s4">-</span><span class="s6">1</span><span class="s3">])</span>
+    <a name="l47"><span class="ln">47   </span></a>    <span class="s2">return </span><span class="s1">new_string</span>
+    <a name="l48"><span class="ln">48   </span></a>
+    <a name="l49"><span class="ln">49   </span></a>
+    <a name="l50"><span class="ln">50   </span></a><span class="s2">def </span><span class="s1">list_generator</span><span class="s3">()</span><span class="s4">:</span>
+    <a name="l51"><span class="ln">51   </span></a>    <span class="s0">&quot;&quot;&quot;
+    <a name="l52"><span class="ln">52   </span></a>    This function creates a list from a user input list of values
+    <a name="l53"><span class="ln">53   </span></a>    :return: List of user input string values
+    <a name="l54"><span class="ln">54   </span></a>    &quot;&quot;&quot;</span>
+    <a name="l55"><span class="ln">55   </span></a>    <span class="s1">list_to_print </span><span class="s4">= </span><span class="s3">[]</span>
+    <a name="l56"><span class="ln">56   </span></a>    <span class="s2">while True</span><span class="s4">:</span>
+    <a name="l57"><span class="ln">57   </span></a>        <span class="s1">new_word </span><span class="s4">= </span><span class="s1">input</span><span class="s3">(</span><span class="s5">&quot;Enter a word to add to the list (press return to stop adding words) &gt; &quot;</span><span class="s3">)</span>
+    <a name="l58"><span class="ln">58   </span></a>        <span class="s2">if </span><span class="s1">new_word </span><span class="s4">== </span><span class="s5">&quot;&quot;</span><span class="s4">:</span>
+    <a name="l59"><span class="ln">59   </span></a>            <span class="s2">break</span>
+    <a name="l60"><span class="ln">60   </span></a>        <span class="s2">else</span><span class="s4">:</span>
+    <a name="l61"><span class="ln">61   </span></a>            <span class="s1">list_to_print</span><span class="s4">.</span><span class="s1">append</span><span class="s3">(</span><span class="s1">new_word</span><span class="s3">)</span>
+    <a name="l62"><span class="ln">62   </span></a>    <span class="s2">return </span><span class="s1">list_to_print</span>
+    <a name="l63"><span class="ln">63   </span></a>
+    <a name="l64"><span class="ln">64   </span></a>
+    <a name="l65"><span class="ln">65   </span></a><span class="s2">if </span><span class="s1">__name__ </span><span class="s4">== </span><span class="s5">'__main__'</span><span class="s4">:</span>
+    <a name="l66"><span class="ln">66   </span></a>
+    <a name="l67"><span class="ln">67   </span></a>    <span class="s7"># Reusable function based version</span>
+    <a name="l68"><span class="ln">68   </span></a>    <span class="s1">print</span><span class="s3">(</span><span class="s1">comma_code</span><span class="s3">(</span><span class="s1">list_generator</span><span class="s3">()))</span>
+    <a name="l69"><span class="ln">69   </span></a>
+    <a name="l70"><span class="ln">70   </span></a>    <span class="s7"># One-time solution</span>
+    <a name="l71"><span class="ln">71   </span></a>    <span class="s1">listing </span><span class="s4">= </span><span class="s1">list_generator</span><span class="s3">()</span>
+    <a name="l72"><span class="ln">72   </span></a>    <span class="s2">if not </span><span class="s1">listing</span><span class="s4">:</span>
+    <a name="l73"><span class="ln">73   </span></a>        <span class="s1">print</span><span class="s3">(</span><span class="s5">'Nothing to Print'</span><span class="s3">)</span>
+    <a name="l74"><span class="ln">74   </span></a>    <span class="s2">elif </span><span class="s1">len</span><span class="s3">(</span><span class="s1">listing</span><span class="s3">) </span><span class="s4">== </span><span class="s6">1</span><span class="s4">:</span>
+    <a name="l75"><span class="ln">75   </span></a>        <span class="s1">print</span><span class="s3">(</span><span class="s1">listing</span><span class="s3">[</span><span class="s6">0</span><span class="s3">])</span>
+    <a name="l76"><span class="ln">76   </span></a>    <span class="s2">else</span><span class="s4">:</span>
+    <a name="l77"><span class="ln">77   </span></a>        <span class="s1">print</span><span class="s3">(</span><span class="s4">*</span><span class="s1">listing</span><span class="s3">[</span><span class="s4">:-</span><span class="s6">1</span><span class="s3">]</span><span class="s4">, </span><span class="s1">sep</span><span class="s4">=</span><span class="s5">&quot;, &quot;</span><span class="s4">, </span><span class="s1">end</span><span class="s4">=</span><span class="s5">','</span><span class="s3">)</span>
+    <a name="l78"><span class="ln">78   </span></a>        <span class="s1">print</span><span class="s3">(</span><span class="s5">' and ' </span><span class="s4">+ </span><span class="s1">listing</span><span class="s3">[</span><span class="s4">-</span><span class="s6">1</span><span class="s3">])</span>
+    <a name="l79"><span class="ln">79   </span></a></pre>
+</div>
+<div class="section" id="'sample_code_output">
+    <h2>Code Output Example<a class="headerlink" href="#sample_code_output" title="'Permalink to this headline">¶</a></h2>
+    <pre>
+        <img src="comma1.png" alt="comma code output image-1">
+        <img src="comma2.png" alt="comma code output image-2">
+        <img src="comma3.png" alt="comma code output image-3">
+    </pre>
+</div>
+</div>
+
+
+          </div>
+        </div>
+      </div>
+      <div class="sphinxsidebar" role="navigation" aria-label="main navigation">
+        <div class="sphinxsidebarwrapper">
+  <h3><a href="index.html">Table of Contents</a></h3>
+  <ul>
+<li><a class="reference internal" href="#">comma module</a><ul>
+<li><a class="reference internal" href="#purpose">Purpose</a></li>
+<li><a class="reference internal" href="#constraints">Constraints</a></li>
+<li><a class="reference internal" href="#parameters">Parameters</a></li>
+</ul>
+</li>
+</ul>
+
+  <h4>Previous topic</h4>
+  <p class="topless"><a href="backpack.html"
+                        title="previous chapter">backpack module</a></p>
+  <div role="note" aria-label="source link">
+    <h3>This Page</h3>
+    <ul class="this-page-menu">
+      <li><a href="_sources/comma.rst.txt"
+            rel="nofollow">Show Source</a></li>
+    </ul>
+   </div>
+<div id="searchbox" style="display: none" role="search">
+  <h3 id="searchlabel">Quick search</h3>
+    <div class="searchformwrapper">
+    <form class="search" action="search.html" method="get">
+      <input type="text" name="q" aria-labelledby="searchlabel" />
+      <input type="submit" value="Go" />
+    </form>
+    </div>
+</div>
+<script type="text/javascript">$('#searchbox').show(0);</script>
+        </div>
+      </div>
+      <div class="clearer"></div>
+    </div>
+    <div class="related" role="navigation" aria-label="related navigation">
+      <h3>Navigation</h3>
+      <ul>
+        <li class="right" style="margin-right: 10px">
+          <a href="genindex.html" title="General Index"
+             >index</a></li>
+        <li class="right" >
+          <a href="py-modindex.html" title="Python Module Index"
+             >modules</a> |</li>
+        <li class="right" >
+          <a href="backpack.html" title="backpack module"
+             >previous</a> |</li>
+        <li class="nav-item nav-item-0"><a href="index.html">Programming with Lists 1.0 documentation</a> &#187;</li>
+          <li class="nav-item nav-item-1"><a href="modules.html" >CMIT-135-40D-WEEK5</a> &#187;</li> 
+      </ul>
+    </div>
+    <div class="footer" role="contentinfo">
+        &#169; Copyright 2020, Craig Smith.
+      Created using <a href="http://sphinx-doc.org/">Sphinx</a> 2.3.1.
+    </div>
+  </body>
+</html>
